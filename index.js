@@ -27,8 +27,7 @@ app.use('/api/messages', messageRoute);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/filterPostByCategory',filterPostRoutes);
 app.use('/api/top10',trendingRoutes);
-//app.use('/api/contactus', contactUsRoutes);
-//app.use('/api/aboutus', aboutUsRoutes);
+
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));

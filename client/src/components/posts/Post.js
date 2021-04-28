@@ -46,17 +46,6 @@ const Post = (props) => {
 
   const handleShowComments = () => {
     setShowComments(!showComments);
-    store.addNotification({
-      title: 'Favourite !',
-      message: 'Someone Favourited your post',
-      type: 'success',                         // 'default', 'success', 'info', 'warning'
-      container: 'bottom-left',                // where to position the notifications
-      animationIn: ["animated", "fadeIn"],     // animate.css classes that's applied
-      animationOut: ["animated", "fadeOut"],   // animate.css classes that's applied
-      dismiss: {
-        duration: 3000
-      }
-    })
   }
 
   const handleDelete = async () => {

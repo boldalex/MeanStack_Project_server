@@ -52,6 +52,7 @@ const CommentList = (props) => {
 
     }
 
+    //-------ADDING A COMMENT
     const handleAddComment = async(e) => {
         e.preventDefault();
 
@@ -115,6 +116,7 @@ const CommentList = (props) => {
         })
     }
 
+    //-----EDIT A COMMENT
     const handleEditComment = async(e) => {
         e.preventDefault();
 

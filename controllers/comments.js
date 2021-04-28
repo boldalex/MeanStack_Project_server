@@ -47,6 +47,7 @@ exports.createComment = async (req, res) => {
             username: req.user.username,
             comment: req.body.comment
         };
+        
         post.comments.push(newComment);
         const result = await post.save();
         res.status(201).json({msg: 'Cooment was successfully created'});
